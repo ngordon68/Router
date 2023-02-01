@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1CB54329802526004F5425 /* CloudKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CB54229802526004F5425 /* CloudKitViewModel.swift */; };
+		8E77E41D2989631B00A38459 /* WorkSpaceExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E77E41C2989631B00A38459 /* WorkSpaceExpandedView.swift */; };
+		8E7CA4BA297EEC2700A72FA4 /* FreemindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4B9297EEC2700A72FA4 /* FreemindApp.swift */; };
+		8E7CA4BC297EEC2700A72FA4 /* Catalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4BB297EEC2700A72FA4 /* Catalogue.swift */; };
+		8E7CA4BE297EEC2700A72FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7CA4BD297EEC2700A72FA4 /* Assets.xcassets */; };
+		8E7CA4C1297EEC2700A72FA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7CA4C0297EEC2700A72FA4 /* Preview Assets.xcassets */; };
+		8E7CA4C8297EEC6000A72FA4 /* ReservationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4C7297EEC6000A72FA4 /* ReservationsView.swift */; };
+		8E7CA4CA297EEC6D00A72FA4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4C9297EEC6D00A72FA4 /* MapView.swift */; };
+		8E7CA4CC297EED5400A72FA4 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */; };
+		8E7CA4CE297EF05400A72FA4 /* ICloudUtilityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4CD297EF05400A72FA4 /* ICloudUtilityClass.swift */; };
+		8E7CA4D0297EF06B00A72FA4 /* WorkSpaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */; };
+		8EB116232982D00F00212335 /* CloudCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB116222982D00F00212335 /* CloudCRUD.swift */; };
+		8EB116252982EE7A00212335 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB116242982EE7A00212335 /* AppColors.swift */; };
+		8EBD75F52981F5F300FB4028 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD75F42981F5F200FB4028 /* TabView.swift */; };
+		8ECE43BE2980363500601485 /* ButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE43BD2980363500601485 /* ButtonStyleView.swift */; };
+		8ECE43C0298037B100601485 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE43BF298037B100601485 /* HeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E1CB54229802526004F5425 /* CloudKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitViewModel.swift; sourceTree = "<group>"; };
+		8E77E41C2989631B00A38459 /* WorkSpaceExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceExpandedView.swift; sourceTree = "<group>"; };
+		8E7CA4B6297EEC2700A72FA4 /* Freemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7CA4B9297EEC2700A72FA4 /* FreemindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreemindApp.swift; sourceTree = "<group>"; };
+		8E7CA4BB297EEC2700A72FA4 /* Catalogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalogue.swift; sourceTree = "<group>"; };
+		8E7CA4BD297EEC2700A72FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E7CA4C0297EEC2700A72FA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E7CA4C7297EEC6000A72FA4 /* ReservationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsView.swift; sourceTree = "<group>"; };
+		8E7CA4C9297EEC6D00A72FA4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		8E7CA4CD297EF05400A72FA4 /* ICloudUtilityClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudUtilityClass.swift; sourceTree = "<group>"; };
+		8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceViewModel.swift; sourceTree = "<group>"; };
+		8EB116222982D00F00212335 /* CloudCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCRUD.swift; sourceTree = "<group>"; };
+		8EB116242982EE7A00212335 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		8EBD75ED2981ACF400FB4028 /* Freemind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Freemind.entitlements; sourceTree = "<group>"; };
+		8EBD75EF2981E33300FB4028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8EBD75F42981F5F200FB4028 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		8ECE43BD2980363500601485 /* ButtonStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleView.swift; sourceTree = "<group>"; };
+		8ECE43BF298037B100601485 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E7CA4B3297EEC2700A72FA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E7CA4AD297EEC2700A72FA4 = {
+			isa = PBXGroup;
+			children = (
+				8E7CA4B8297EEC2700A72FA4 /* Freemind */,
+				8E7CA4B7297EEC2700A72FA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E7CA4B7297EEC2700A72FA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E7CA4B6297EEC2700A72FA4 /* Freemind.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E7CA4B8297EEC2700A72FA4 /* Freemind */ = {
+			isa = PBXGroup;
+			children = (
+				8EBD75EF2981E33300FB4028 /* Info.plist */,
+				8EBD75ED2981ACF400FB4028 /* Freemind.entitlements */,
+				8E7CA4B9297EEC2700A72FA4 /* FreemindApp.swift */,
+				8EBD75EE2981B95F00FB4028 /* VViews */,
+				8EBD75EC2981AB7000FB4028 /* iCloudFunctions */,
+				8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */,
+				8E7CA4BD297EEC2700A72FA4 /* Assets.xcassets */,
+				8E7CA4BF297EEC2700A72FA4 /* Preview Content */,
+			);
+			path = Freemind;
+			sourceTree = "<group>";
+		};
+		8E7CA4BF297EEC2700A72FA4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8E7CA4C0297EEC2700A72FA4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8EBD75EC2981AB7000FB4028 /* iCloudFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				8E7CA4CD297EF05400A72FA4 /* ICloudUtilityClass.swift */,
+				8E1CB54229802526004F5425 /* CloudKitViewModel.swift */,
+				8EB116222982D00F00212335 /* CloudCRUD.swift */,
+			);
+			path = iCloudFunctions;
+			sourceTree = "<group>";
+		};
+		8EBD75EE2981B95F00FB4028 /* VViews */ = {
+			isa = PBXGroup;
+			children = (
+				8EBD75F42981F5F200FB4028 /* TabView.swift */,
+				8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */,
+				8E7CA4BB297EEC2700A72FA4 /* Catalogue.swift */,
+				8E7CA4C9297EEC6D00A72FA4 /* MapView.swift */,
+				8E7CA4C7297EEC6000A72FA4 /* ReservationsView.swift */,
+				8ECE43BF298037B100601485 /* HeaderView.swift */,
+				8ECE43BD2980363500601485 /* ButtonStyleView.swift */,
+				8EB116242982EE7A00212335 /* AppColors.swift */,
+				8E77E41C2989631B00A38459 /* WorkSpaceExpandedView.swift */,
+			);
+			path = VViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E7CA4B5297EEC2700A72FA4 /* Freemind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E7CA4C4297EEC2700A72FA4 /* Build configuration list for PBXNativeTarget "Freemind" */;
+			buildPhases = (
+				8E7CA4B2297EEC2700A72FA4 /* Sources */,
+				8E7CA4B3297EEC2700A72FA4 /* Frameworks */,
+				8E7CA4B4297EEC2700A72FA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Freemind;
+			productName = Freemind;
+			productReference = 8E7CA4B6297EEC2700A72FA4 /* Freemind.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E7CA4AE297EEC2700A72FA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					8E7CA4B5297EEC2700A72FA4 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 8E7CA4B1297EEC2700A72FA4 /* Build configuration list for PBXProject "Freemind" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E7CA4AD297EEC2700A72FA4;
+			productRefGroup = 8E7CA4B7297EEC2700A72FA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E7CA4B5297EEC2700A72FA4 /* Freemind */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E7CA4B4297EEC2700A72FA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7CA4C1297EEC2700A72FA4 /* Preview Assets.xcassets in Resources */,
+				8E7CA4BE297EEC2700A72FA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E7CA4B2297EEC2700A72FA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EBD75F52981F5F300FB4028 /* TabView.swift in Sources */,
+				8ECE43BE2980363500601485 /* ButtonStyleView.swift in Sources */,
+				8E7CA4CC297EED5400A72FA4 /* FavoritesView.swift in Sources */,
+				8EB116252982EE7A00212335 /* AppColors.swift in Sources */,
+				8EB116232982D00F00212335 /* CloudCRUD.swift in Sources */,
+				8E77E41D2989631B00A38459 /* WorkSpaceExpandedView.swift in Sources */,
+				8E7CA4D0297EF06B00A72FA4 /* WorkSpaceViewModel.swift in Sources */,
+				8E7CA4C8297EEC6000A72FA4 /* ReservationsView.swift in Sources */,
+				8E7CA4CA297EEC6D00A72FA4 /* MapView.swift in Sources */,
+				8ECE43C0298037B100601485 /* HeaderView.swift in Sources */,
+				8E7CA4CE297EF05400A72FA4 /* ICloudUtilityClass.swift in Sources */,
+				8E1CB54329802526004F5425 /* CloudKitViewModel.swift in Sources */,
+				8E7CA4BC297EEC2700A72FA4 /* Catalogue.swift in Sources */,
+				8E7CA4BA297EEC2700A72FA4 /* FreemindApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8E7CA4C2297EEC2700A72FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E7CA4C3297EEC2700A72FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E7CA4C5297EEC2700A72FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Freemind/Freemind.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Freemind/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Freemind/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Freeminds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E7CA4C6297EEC2700A72FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Freemind/Freemind.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Freemind/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Freemind/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Freeminds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E7CA4B1297EEC2700A72FA4 /* Build configuration list for PBXProject "Freemind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7CA4C2297EEC2700A72FA4 /* Debug */,
+				8E7CA4C3297EEC2700A72FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E7CA4C4297EEC2700A72FA4 /* Build configuration list for PBXNativeTarget "Freemind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7CA4C5297EEC2700A72FA4 /* Debug */,
+				8E7CA4C6297EEC2700A72FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E7CA4AE297EEC2700A72FA4 /* Project object */;
+}
