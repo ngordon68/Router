@@ -22,7 +22,7 @@ struct MainView: View {
                     .tabItem {
                         Label("Real Time \n Feed", systemImage: "calendar")
                     }
-                FavoritesView(workSpace: .example)
+                FavoritesView()
                     .tabItem {
                         Label("Favorites", systemImage: "heart.fill")
                     }
