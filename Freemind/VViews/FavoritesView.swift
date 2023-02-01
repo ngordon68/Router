@@ -1,10 +1,10 @@
 //
 //  FavoritesView.swift
 //  Freemind
+////
+////  Created by Nick Gordon on 1/23/23.
+////
 //
-//  Created by Nick Gordon on 1/23/23.
-//
-
 import SwiftUI
 
 struct FavoritesView: View {
@@ -12,7 +12,7 @@ struct FavoritesView: View {
     //@ObservedObject private var searched:Search
    
     
-   @ObservedObject var workSpace:WorkSpaceFavorites = WorkSpaceFavorites()
+  // @ObservedObject var workSpace:WorkSpaceFavorites = WorkSpaceFavorites()
    // @ObservedObject var workSpaceFavorites:WorkSpaceFavorites
     
     var body: some View {
@@ -20,16 +20,16 @@ struct FavoritesView: View {
             ZStack {
                 
                 appColors.primaryColorTwo
-                    .ignoresSafeArea()
+                     .ignoresSafeArea()
                                 
                 VStack {
                     ScrollView {
-                        LazyVStack {
-                            ForEach(workSpace.favoriteWorkSpace)  { escaperoom in
-                                SpaceRoomLayout(escapeRoomVM: escaperoom)
-                                
-                            }
-                        }
+//                        LazyVStack {
+//                            ForEach(workSpace.favoriteWorkSpace)  { escaperoom in
+//                                SpaceRoomLayout(escapeRoomVM: escaperoom)
+//
+//                            }
+//                        }
                     }
                 }
                 .navigationTitle("Favorites")
@@ -42,9 +42,6 @@ struct FavoritesView: View {
 
 struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesView(workSpace: .example,
-        
-        
-        )
+        FavoritesView()
     }
 }
