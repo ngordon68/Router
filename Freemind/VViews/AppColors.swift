@@ -14,8 +14,6 @@ struct AppColors {
     let secondaryColorOne: Color = Color(red: 0.648, green: 0.921, blue: 0.96)
     let secondaryColorTwo: Color = Color(red: 0.369, green: 0.662, blue: 0.692)
     let colorgreen:Color = Color(red: 0.669, green: 0.804, blue: 0.19)
-    
- 
 }
 
 let appColors = AppColors()

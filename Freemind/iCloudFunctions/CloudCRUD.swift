@@ -87,8 +87,9 @@ class UserListViewModel:ObservableObject {
                 print(result)
             }
             //change to append to array. use switch to solve this instead of fetching again
-        } catch let error {
+        } catch let error { 
             print(error)
+        
         }
     }
     

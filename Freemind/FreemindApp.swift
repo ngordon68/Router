@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct FreemindApp: App {
+    
+   
+
     var body: some Scene {
         WindowGroup {
             MainView()
+                
+               
         }
     }
 }
