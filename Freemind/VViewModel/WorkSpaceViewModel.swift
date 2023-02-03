@@ -1,0 +1,88 @@
+//
+//  WorkSpaceViewModel.swift
+//  Freemind
+//
+//  Created by Nick Gordon on 1/23/23.
+//
+
+import Foundation
+
+class WorkSpace: Identifiable, ObservableObject, Hashable, Comparable  {
+      
+  //  @Published var workspaceFavorites = WorkSpaceFavorites()
+    
+  //  @Published var classWorkSpace:[WorkSpace] = [WorkSpace]()
+    
+    var id = UUID().uuidString
+    @Published var roomName: String
+    @Published var roomDescription:String
+    @Published var roomPicture:String
+    @Published var isFavorite = false
+    @Published var result = 0
+    
+    init( roomName: String, roomDescription: String, roomPicture: String, isFavorite: Bool = false) {
+        //self.id = id
+        self.roomName = roomName
+        self.roomDescription = roomDescription
+        self.roomPicture = roomPicture
+        self.isFavorite = isFavorite
+    }
+    
+  
+    
+    static func <(lhs: WorkSpace, rhs: WorkSpace) -> Bool {
+        lhs.roomName < rhs.roomName
+    }
+
+   
+    //make hashable
+        static func == (lhs: WorkSpace, rhs: WorkSpace) -> Bool {
+            return lhs.roomName == rhs.roomName }
+        
+        func hash(into hasher: inout Hasher) {
+            hasher.combine(roomName)
+            
+        }
+    
+
+
+    
+
+    static let example = WorkSpace(roomName: "Coffee Bean", roomDescription: "Some text", roomPicture: "Coffee")
+    
+    
+//    func appendToFavorites(workspace: WorkSpace) {
+//        self.isFavorite.toggle()
+//        if self.isFavorite == true {
+//            globalWorkSpace.append(workspace)
+//            workspaceFavorites.favoriteWorkSpace.append(workspace)
+//            result += 1
+//            globalResult += 1
+//
+//
+//            //classWorkSpace = globalWorkSpace
+//
+//
+//            print("\(result)")
+//            print("\(globalResult)")
+//           // print("change class array:\(favoriteWorkSpace.count)")
+//            print("global array:\(globalWorkSpace.count)")
+//
+//
+//        }
+//       // favoriteWorkSpace = globalWorkSpace
+//    }
+
+}
+
+
+
+var workSpaces:[WorkSpace] = [
+    
+    WorkSpace(roomName: "Bank B", roomDescription: "Some sample text", roomPicture: "Coffee"),
+    WorkSpace(roomName: "Bank A", roomDescription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ", roomPicture: "Coffee"),
+    WorkSpace(roomName: "Gym A", roomDescription: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ", roomPicture: "Coffee"),
+    WorkSpace(roomName: "Gym B", roomDescription: "Some text", roomPicture: "Coffee"),
+    WorkSpace(roomName: "Dinner A", roomDescription: "Sample Text", roomPicture: "Coffee"),
+    WorkSpace(roomName: "Nick Space", roomDescription: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ", roomPicture: "Coffee")
+]

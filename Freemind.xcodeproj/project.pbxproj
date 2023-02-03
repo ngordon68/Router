@@ -23,6 +23,8 @@
 		8EBD75F52981F5F300FB4028 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD75F42981F5F200FB4028 /* TabView.swift */; };
 		8ECE43BE2980363500601485 /* ButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE43BD2980363500601485 /* ButtonStyleView.swift */; };
 		8ECE43C0298037B100601485 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE43BF298037B100601485 /* HeaderView.swift */; };
+		8ED038DD298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */; };
+		8ED038DF298DA845008AFB74 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038DE298DA845008AFB74 /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		8EBD75F42981F5F200FB4028 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		8ECE43BD2980363500601485 /* ButtonStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleView.swift; sourceTree = "<group>"; };
 		8ECE43BF298037B100601485 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceFavoritesViewModel.swift; sourceTree = "<group>"; };
+		8ED038DE298DA845008AFB74 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +85,8 @@
 				8EBD75ED2981ACF400FB4028 /* Freemind.entitlements */,
 				8E7CA4B9297EEC2700A72FA4 /* FreemindApp.swift */,
 				8EBD75EE2981B95F00FB4028 /* VViews */,
+				8ED038DB298D6F21008AFB74 /* VViewModel */,
 				8EBD75EC2981AB7000FB4028 /* iCloudFunctions */,
-				8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */,
 				8E7CA4BD297EEC2700A72FA4 /* Assets.xcassets */,
 				8E7CA4BF297EEC2700A72FA4 /* Preview Content */,
 			);
@@ -121,6 +125,16 @@
 				8E77E41C2989631B00A38459 /* WorkSpaceExpandedView.swift */,
 			);
 			path = VViews;
+			sourceTree = "<group>";
+		};
+		8ED038DB298D6F21008AFB74 /* VViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8ED038DE298DA845008AFB74 /* SearchViewModel.swift */,
+				8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */,
+				8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */,
+			);
+			path = VViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +209,7 @@
 			files = (
 				8EBD75F52981F5F300FB4028 /* TabView.swift in Sources */,
 				8ECE43BE2980363500601485 /* ButtonStyleView.swift in Sources */,
+				8ED038DF298DA845008AFB74 /* SearchViewModel.swift in Sources */,
 				8E7CA4CC297EED5400A72FA4 /* FavoritesView.swift in Sources */,
 				8EB116252982EE7A00212335 /* AppColors.swift in Sources */,
 				8EB116232982D00F00212335 /* CloudCRUD.swift in Sources */,
@@ -207,6 +222,7 @@
 				8E1CB54329802526004F5425 /* CloudKitViewModel.swift in Sources */,
 				8E7CA4BC297EEC2700A72FA4 /* Catalogue.swift in Sources */,
 				8E7CA4BA297EEC2700A72FA4 /* FreemindApp.swift in Sources */,
+				8ED038DD298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

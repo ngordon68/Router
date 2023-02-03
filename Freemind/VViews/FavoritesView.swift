@@ -8,28 +8,27 @@
 import SwiftUI
 
 struct FavoritesView: View {
-//    @ObservedObject var test:User
-    //@ObservedObject private var searched:Search
    
-    
-  // @ObservedObject var workSpace:WorkSpaceFavorites = WorkSpaceFavorites()
-   // @ObservedObject var workSpaceFavorites:WorkSpaceFavorites
+    @ObservedObject var workSpaceFavorite: WorkSpaceFavorites
+    @ObservedObject var workSpace: WorkSpace
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 
                 appColors.primaryColorTwo
-                     .ignoresSafeArea()
+                    .ignoresSafeArea()
+                     
                                 
                 VStack {
                     ScrollView {
-//                        LazyVStack {
-//                            ForEach(workSpace.favoriteWorkSpace)  { escaperoom in
-//                                SpaceRoomLayout(escapeRoomVM: escaperoom)
-//
-//                            }
-//                        }
+                        VStack {
+                          
+                            ForEach(workSpaceFavorite.favoriteWorkSpace)  { workSpace in
+                                SpaceRoomLayout(workSpace: workSpace, workSpaceFavorite: workSpaceFavorite)
+                                
+                            }
+                        }
                     }
                 }
                 .navigationTitle("Favorites")
@@ -42,6 +41,6 @@ struct FavoritesView: View {
 
 struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesView()
+        FavoritesView(workSpaceFavorite: WorkSpaceFavorites(), workSpace: .example)
     }
 }
