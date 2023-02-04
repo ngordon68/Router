@@ -17,7 +17,6 @@ struct SpaceRoomLayout: View {
         
         VStack(alignment: .leading) {
             
-        
             Image(workSpace.roomPicture)
                 .resizable()
                 .frame(height:150)

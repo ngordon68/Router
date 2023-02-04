@@ -23,6 +23,8 @@ struct FavoritesView: View {
                 VStack {
                     ScrollView {
                         VStack {
+                            
+    
                           
                             ForEach(workSpaceFavorite.favoriteWorkSpace)  { workSpace in
                                 SpaceRoomLayout(workSpace: workSpace, workSpaceFavorite: workSpaceFavorite)
