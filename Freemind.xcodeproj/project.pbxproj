@@ -25,6 +25,7 @@
 		8ECE43C0298037B100601485 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE43BF298037B100601485 /* HeaderView.swift */; };
 		8ED038DD298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */; };
 		8ED038DF298DA845008AFB74 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038DE298DA845008AFB74 /* SearchViewModel.swift */; };
+		8ED038E1298EDB53008AFB74 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		8ECE43BF298037B100601485 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceFavoritesViewModel.swift; sourceTree = "<group>"; };
 		8ED038DE298DA845008AFB74 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				8EBD75F42981F5F200FB4028 /* TabView.swift */,
-				8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */,
 				8E7CA4BB297EEC2700A72FA4 /* Catalogue.swift */,
+				8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */,
+				8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */,
 				8E7CA4C9297EEC6D00A72FA4 /* MapView.swift */,
 				8E7CA4C7297EEC6000A72FA4 /* ReservationsView.swift */,
 				8ECE43BF298037B100601485 /* HeaderView.swift */,
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED038E1298EDB53008AFB74 /* SplashScreenView.swift in Sources */,
 				8EBD75F52981F5F300FB4028 /* TabView.swift in Sources */,
 				8ECE43BE2980363500601485 /* ButtonStyleView.swift in Sources */,
 				8ED038DF298DA845008AFB74 /* SearchViewModel.swift in Sources */,

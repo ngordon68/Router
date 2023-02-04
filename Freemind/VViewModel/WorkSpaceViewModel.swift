@@ -9,10 +9,6 @@ import Foundation
 
 class WorkSpace: Identifiable, ObservableObject, Hashable, Comparable  {
       
-  //  @Published var workspaceFavorites = WorkSpaceFavorites()
-    
-  //  @Published var classWorkSpace:[WorkSpace] = [WorkSpace]()
-    
     var id = UUID().uuidString
     @Published var roomName: String
     @Published var roomDescription:String
@@ -28,8 +24,7 @@ class WorkSpace: Identifiable, ObservableObject, Hashable, Comparable  {
         self.isFavorite = isFavorite
     }
     
-  
-    
+      
     static func <(lhs: WorkSpace, rhs: WorkSpace) -> Bool {
         lhs.roomName < rhs.roomName
     }
@@ -44,37 +39,9 @@ class WorkSpace: Identifiable, ObservableObject, Hashable, Comparable  {
             
         }
     
-
-
-    
-
     static let example = WorkSpace(roomName: "Coffee Bean", roomDescription: "Some text", roomPicture: "Coffee")
     
-    
-//    func appendToFavorites(workspace: WorkSpace) {
-//        self.isFavorite.toggle()
-//        if self.isFavorite == true {
-//            globalWorkSpace.append(workspace)
-//            workspaceFavorites.favoriteWorkSpace.append(workspace)
-//            result += 1
-//            globalResult += 1
-//
-//
-//            //classWorkSpace = globalWorkSpace
-//
-//
-//            print("\(result)")
-//            print("\(globalResult)")
-//           // print("change class array:\(favoriteWorkSpace.count)")
-//            print("global array:\(globalWorkSpace.count)")
-//
-//
-//        }
-//       // favoriteWorkSpace = globalWorkSpace
-//    }
-
 }
-
 
 
 var workSpaces:[WorkSpace] = [

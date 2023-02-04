@@ -11,12 +11,12 @@ struct HeaderView: View {
     
     var body: some View {
         ZStack {
-           // appColors.primaryColorOne
+          
             HStack {
                 Text("This should show on the main screen")
                     .font(.largeTitle)
                     .foregroundColor(appColors.primaryColorTwo)
-                // .background(.red)
+              
             }
         }
     }

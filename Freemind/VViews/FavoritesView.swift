@@ -23,6 +23,8 @@ struct FavoritesView: View {
                 VStack {
                     ScrollView {
                         VStack {
+                            
+    
                           
                             Text("HI")
                             ForEach(workSpaceFavorite.favoriteWorkSpace)  { workSpace in
