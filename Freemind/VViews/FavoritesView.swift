@@ -21,6 +21,7 @@ struct FavoritesView: View {
                      
                                 
                 VStack {
+                    Text("Eat more sushi")
                     ScrollView {
                         VStack {
                             
