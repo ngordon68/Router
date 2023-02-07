@@ -26,6 +26,7 @@
 		8ED038DD298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */; };
 		8ED038DF298DA845008AFB74 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038DE298DA845008AFB74 /* SearchViewModel.swift */; };
 		8ED038E1298EDB53008AFB74 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */; };
+		8ED038E329916B4A008AFB74 /* APIYelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038E229916B4A008AFB74 /* APIYelp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceFavoritesViewModel.swift; sourceTree = "<group>"; };
 		8ED038DE298DA845008AFB74 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		8ED038E229916B4A008AFB74 /* APIYelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIYelp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				8ED038DE298DA845008AFB74 /* SearchViewModel.swift */,
 				8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */,
+				8ED038E229916B4A008AFB74 /* APIYelp.swift */,
 				8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */,
 			);
 			path = VViewModel;
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED038E329916B4A008AFB74 /* APIYelp.swift in Sources */,
 				8ED038E1298EDB53008AFB74 /* SplashScreenView.swift in Sources */,
 				8EBD75F52981F5F300FB4028 /* TabView.swift in Sources */,
 				8ECE43BE2980363500601485 /* ButtonStyleView.swift in Sources */,
