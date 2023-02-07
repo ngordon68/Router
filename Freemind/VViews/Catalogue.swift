@@ -104,7 +104,8 @@ struct ContentView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-            Text("Hi Nick")
+            Text("Hi Nick S")
+                   
                 
                     ScrollView {
                         LazyVStack {
