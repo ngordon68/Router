@@ -97,7 +97,7 @@ struct ContentView: View {
                 
                 VStack {
                     
-                 Text("t")
+                 Text("to")
                 
                 
                     ScrollView {
