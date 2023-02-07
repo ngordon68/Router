@@ -16,6 +16,8 @@ class WorkSpace: Identifiable, ObservableObject, Hashable, Comparable  {
     @Published var isFavorite = false
     @Published var result = 0
     
+   
+    
     init( roomName: String, roomDescription: String, roomPicture: String, isFavorite: Bool = false) {
         //self.id = id
         self.roomName = roomName
@@ -41,6 +43,15 @@ class WorkSpace: Identifiable, ObservableObject, Hashable, Comparable  {
     
     static let example = WorkSpace(roomName: "Coffee Bean", roomDescription: "Some text", roomPicture: "Coffee")
     
+//    func fetch() async throws {
+//        let url = URL(string: "https://api.yelp.com/v3/businesses/search?location=Haraz&sort_by=best_match&limit=20")!
+//        let (data, _) = try await URLSession.shared.data(from: url)
+//        testworkspace = try JSONDecoder().decode([TestWorkSpace].self, from: data)
+//
+//    }
+    
+    
+
 }
 
 
@@ -53,3 +64,7 @@ var workSpaces:[WorkSpace] = [
     WorkSpace(roomName: "Dinner A", roomDescription: "Sample Text", roomPicture: "Coffee"),
     WorkSpace(roomName: "Nick Space", roomDescription: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ", roomPicture: "Coffee")
 ]
+
+
+    
+

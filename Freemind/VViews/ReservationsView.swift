@@ -12,10 +12,29 @@ struct ReservationsView: View {
     
    // @ObservedObject var test:User
   //  @StateObject var user = UserListViewModel()
+  //  @ObservedObject var workspace:WorkSpace
+    @ObservedObject var vm: TestApi
+   
 
     
     var body: some View {
-        Text("test")
+        VStack {
+            Text("test \(vm.testworkspaces.count)")
+            List {
+                ForEach(vm.testworkspaces, id: \ .id) { test in
+                    Text(test.name ?? "nil")
+                    
+                }
+            }.onAppear(perform: vm.search)
+           
+        }
+//        .task {
+//            do {
+//                try await workspace.fetch()
+//            } catch {
+//                print("error")
+//            }
+//        }
         
 //        NavigationView {
 //
@@ -58,6 +77,6 @@ struct ReservationsView: View {
 
 struct ReservationsView_Previews: PreviewProvider {
     static var previews: some View {
-        ReservationsView()
+        ReservationsView(vm: .init())
     }
 }
