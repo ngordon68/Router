@@ -46,10 +46,10 @@ class WorkSpace: Identifiable, ObservableObject, Hashable, Comparable  {
 
 var workSpaces:[WorkSpace] = [
     
-    WorkSpace(roomName: "Bank B", roomDescription: "Some sample text", roomPicture: "Coffee"),
-    WorkSpace(roomName: "Bank A", roomDescription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ", roomPicture: "Coffee"),
-    WorkSpace(roomName: "Gym A", roomDescription: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ", roomPicture: "Coffee"),
-    WorkSpace(roomName: "Gym B", roomDescription: "Some text", roomPicture: "Coffee"),
+    WorkSpace(roomName: "Haraz Coffee Shop", roomDescription: "Some sample text", roomPicture: "Haraz"),
+    WorkSpace(roomName: "The Congregation", roomDescription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ", roomPicture: "Congregation"),
+    WorkSpace(roomName: "Capital One Bank", roomDescription: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ", roomPicture: "CapitalOne"),
+    WorkSpace(roomName: "Replay Cafe", roomDescription: "Some text", roomPicture: "Coffee"),
     WorkSpace(roomName: "Dinner A", roomDescription: "Sample Text", roomPicture: "Coffee"),
     WorkSpace(roomName: "Nick Space", roomDescription: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ", roomPicture: "Coffee")
 ]

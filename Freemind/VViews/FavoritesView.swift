@@ -21,6 +21,7 @@ struct FavoritesView: View {
                      
                                 
                 VStack {
+                    
                     ScrollView {
                         VStack {
                             

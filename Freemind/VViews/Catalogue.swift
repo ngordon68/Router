@@ -15,14 +15,29 @@ struct SpaceRoomLayout: View {
     
     var body: some View {
         
-        VStack(alignment: .leading) {
+        Rectangle()
+            .foregroundColor(appColors.secondaryColorOne)
+     
+
+            .frame(height:230)
+            .border(.gray)
+           
+           
+            .cornerRadius(30)
+            .shadow(radius: 20)
+            .padding()
+       
+                        .overlay (
+        VStack(alignment: .center) {
             
            
             
             Image(workSpace.roomPicture)
                 .resizable()
+                
                 .frame(height:150)
                 .cornerRadius(20)
+                
                 .overlay (
                     Button {
                         workSpaceFavorite.appendToFavorites(workspace: workSpace)
@@ -32,19 +47,45 @@ struct SpaceRoomLayout: View {
                             .foregroundColor(workSpace.isFavorite ? .pink: .white)
                     }
                   
-                    .offset(x:160,y:-50)
+                    .offset(x:140,y:-50)
                 )
-            Text(workSpace.roomName)
-                .font(.headline)
-                .padding(.leading)
-                .foregroundColor(appColors.primaryColorOne)
-            Text(workSpace.roomDescription)
-                .padding(.leading)
-                .foregroundColor(appColors.primaryColorOne)
+            HStack {
+                
+                Text(workSpace.roomName)
+                    .font(.title)
+                    .bold()
+                    .padding(.leading)
+                    .foregroundColor(appColors.primaryColorOne)
+                
+                Spacer()
+                
+                Rectangle()
+                    .foregroundColor(appColors.primaryColorOne)
+                    .frame(width:40, height: 40)
+                    .cornerRadius(5)
+                    .overlay (
+                    
+                    Image(systemName: "car.circle")
+                        .foregroundColor(.white)
+                    
+                    
+                
+                      
+                    
+                    )
+                   
+                
+                Spacer()
+                    
+            }
+           
             
             
             
         }
+        .padding()
+        )
+        
         .padding(.top, 20)
     }
 }
@@ -59,11 +100,12 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                appColors.primaryColorTwo
+                appColors.secondaryColorTwo
                     .ignoresSafeArea()
                 
                 VStack {
-                
+            Text("Hi Nick S")
+                   
                 
                     ScrollView {
                         LazyVStack {
@@ -74,8 +116,8 @@ struct ContentView: View {
                         }
                     }
                     
-                }.navigationTitle("Catalogue")
-                .searchable(text: $searched.searchText, prompt: Text("Search here")  )
+                }
+                .searchable(text: $searched.searchText, prompt: Text("Search here"))
                     
                 .padding()
             }
