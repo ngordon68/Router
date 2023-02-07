@@ -17,6 +17,8 @@ struct ButtonStyleView: View {
         VStack {
             
             Text("to")
+            
+            Text("go to the moon baby!-Art")
                 .font(.largeTitle)
                 .foregroundColor(Color(red: 0.669, green: 0.804, blue: 0.19))
  
