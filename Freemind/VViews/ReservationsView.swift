@@ -32,7 +32,7 @@ struct ReservationsView: View {
                             Text("\(workSpace.reviewCount!)")
                             // Text(workSace.location!.address1 ?? "NOTHING!" )
                             AsyncImage(url: URL(string: workSpace.imageURL!))
-                                .frame(width:40, height:40)
+                                .frame(width:50, height:50)
                                 
                             
                         }
