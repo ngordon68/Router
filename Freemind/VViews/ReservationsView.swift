@@ -28,7 +28,11 @@ struct ReservationsView: View {
                 ForEach(vm.testworkspaces) { workSpace in
                     HStack {
                         Text(workSpace.name ?? "nothing")
-                        Text(workSpace.location!.address1 ?? "NOTHING!" )
+                       // Text(workSpace.location!.address1 ?? "NOTHING!" )
+                        Image(workSpace.imageURL ?? "nil")
+                            .resizable()
+                            .aspectRatio( contentMode: .fit)
+                            .frame(height:50)
                         
                     }
 
