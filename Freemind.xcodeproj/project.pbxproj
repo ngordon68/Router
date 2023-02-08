@@ -26,6 +26,7 @@
 		8ED038DD298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */; };
 		8ED038DF298DA845008AFB74 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038DE298DA845008AFB74 /* SearchViewModel.swift */; };
 		8ED038E1298EDB53008AFB74 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */; };
+		A1A221792992B5A2003DB17B /* RealTimeDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A221782992B5A2003DB17B /* RealTimeDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +39,7 @@
 		8E7CA4C0297EEC2700A72FA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8E7CA4C7297EEC6000A72FA4 /* ReservationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsView.swift; sourceTree = "<group>"; };
 		8E7CA4C9297EEC6D00A72FA4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		8E7CA4CD297EF05400A72FA4 /* ICloudUtilityClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudUtilityClass.swift; sourceTree = "<group>"; };
 		8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceViewModel.swift; sourceTree = "<group>"; };
 		8EB116222982D00F00212335 /* CloudCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCRUD.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceFavoritesViewModel.swift; sourceTree = "<group>"; };
 		8ED038DE298DA845008AFB74 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		A1A221782992B5A2003DB17B /* RealTimeDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */,
 				8E7CA4C9297EEC6D00A72FA4 /* MapView.swift */,
 				8E7CA4C7297EEC6000A72FA4 /* ReservationsView.swift */,
+				A1A221782992B5A2003DB17B /* RealTimeDataView.swift */,
 				8ECE43BF298037B100601485 /* HeaderView.swift */,
 				8ECE43BD2980363500601485 /* ButtonStyleView.swift */,
 				8EB116242982EE7A00212335 /* AppColors.swift */,
@@ -213,6 +216,7 @@
 				8ED038E1298EDB53008AFB74 /* SplashScreenView.swift in Sources */,
 				8EBD75F52981F5F300FB4028 /* TabView.swift in Sources */,
 				8ECE43BE2980363500601485 /* ButtonStyleView.swift in Sources */,
+				A1A221792992B5A2003DB17B /* RealTimeDataView.swift in Sources */,
 				8ED038DF298DA845008AFB74 /* SearchViewModel.swift in Sources */,
 				8E7CA4CC297EED5400A72FA4 /* FavoritesView.swift in Sources */,
 				8EB116252982EE7A00212335 /* AppColors.swift in Sources */,
