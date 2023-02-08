@@ -21,7 +21,7 @@ struct MainView: View {
                         Label("Received", systemImage: "list.bullet.below.rectangle")
                     }
                 ReservationsView(vm: .init())
-                    .badge(5)
+
                     .tabItem {
                         Label("Real Time \n Feed", systemImage: "calendar")
                     }
