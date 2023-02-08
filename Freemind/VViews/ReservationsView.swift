@@ -14,6 +14,10 @@ struct ReservationsView: View {
   //  @StateObject var user = UserListViewModel()
   //  @ObservedObject var workspace:WorkSpace
     @ObservedObject var vm: TestApi
+    
+    
+    
+
    
 
     
@@ -21,11 +25,21 @@ struct ReservationsView: View {
         VStack {
             Text("test \(vm.testworkspaces.count)")
             List {
-                ForEach(vm.testworkspaces, id: \ .id) { test in
-                    Text(test.name ?? "nil")
-                    
+                ForEach(vm.testworkspaces) { workSpace in
+                    HStack {
+                        Text(workSpace.name ?? "nothing")
+                       // Text(workSpace.location!.address1 ?? "NOTHING!" )
+                        Image(workSpace.imageURL ?? "nil")
+                            .resizable()
+                            .aspectRatio( contentMode: .fit)
+                            .frame(height:50)
+                        
+                    }
+
+
                 }
-            }.onAppear(perform: vm.search)
+            }
+            
            
         }
 //        .task {
@@ -75,8 +89,8 @@ struct ReservationsView: View {
     }
 }
 
-struct ReservationsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ReservationsView(vm: .init())
-    }
-}
+//struct ReservationsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ReservationsView()
+//    }
+//}
