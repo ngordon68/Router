@@ -24,20 +24,22 @@ struct ReservationsView: View {
     var body: some View {
         VStack {
             Text("test \(vm.testworkspaces.count)")
-            List {
-                ForEach(vm.testworkspaces) { workSpace in
-                    HStack {
-                        Text(workSpace.name ?? "nothing")
-                       // Text(workSpace.location!.address1 ?? "NOTHING!" )
-                        Image(workSpace.imageURL ?? "nil")
-                            .resizable()
-                            .aspectRatio( contentMode: .fit)
-                            .frame(height:50)
+            ScrollView {
+                LazyVStack {
+                    ForEach(vm.testworkspaces) { workSpace in
+                        HStack {
+                            Text(workSpace.name ?? "nothing")
+                            Text("\(workSpace.reviewCount!)")
+                            // Text(workSace.location!.address1 ?? "NOTHING!" )
+                            AsyncImage(url: URL(string: workSpace.imageURL!))
+                                .frame(width:50, height:50)
+                                
+                            
+                        }
+                        
                         
                     }
-
-
-                }
+                }.onAppear(perform: vm.getPosts)
             }
             
            
