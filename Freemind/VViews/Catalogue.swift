@@ -68,20 +68,12 @@ struct SpaceRoomLayout: View {
                     Image(systemName: "car.circle")
                         .foregroundColor(.white)
                     
-                    
-                
-                      
-                    
                     )
                    
                 
                 Spacer()
                     
             }
-           
-            
-            
-            
         }
         .padding()
         )
@@ -104,8 +96,9 @@ struct ContentView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-            Text("Hi Nick S")
-                   
+                    
+                 Text("to")
+                
                 
                     ScrollView {
                         LazyVStack {

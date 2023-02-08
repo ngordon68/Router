@@ -11,6 +11,7 @@ struct MainView: View {
     @StateObject var test:User = User()
     @StateObject var workSpace = WorkSpace(roomName: "Coffe Bean", roomDescription: "Place to study", roomPicture: "Coffee")
     @StateObject var workSpaceFavorite = WorkSpaceFavorites()
+    @StateObject var vm: TestApi = TestApi()
  
     var body: some View {
         
@@ -19,8 +20,8 @@ struct MainView: View {
                     .tabItem {
                         Label("Received", systemImage: "list.bullet.below.rectangle")
                     }
-                ReservationsView()
-                    .badge(5)
+                ReservationsView(vm: .init())
+
                     .tabItem {
                         Label("Real Time \n Feed", systemImage: "calendar")
                     }

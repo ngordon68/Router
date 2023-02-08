@@ -12,10 +12,45 @@ struct ReservationsView: View {
     
    // @ObservedObject var test:User
   //  @StateObject var user = UserListViewModel()
+  //  @ObservedObject var workspace:WorkSpace
+    @ObservedObject var vm: TestApi
+    
+    
+    
+
+   
 
     
     var body: some View {
-        Text("test")
+        VStack {
+            Text("test \(vm.testworkspaces.count)")
+            ScrollView {
+                LazyVStack {
+                    ForEach(vm.testworkspaces) { workSpace in
+                        HStack {
+                            Text(workSpace.name ?? "nothing")
+                            Text("\(workSpace.reviewCount!)")
+                            // Text(workSace.location!.address1 ?? "NOTHING!" )
+                            AsyncImage(url: URL(string: workSpace.imageURL!))
+                                .frame(width:50, height:50)
+                                
+                            
+                        }
+                        
+                        
+                    }
+                }.onAppear(perform: vm.getPosts)
+            }
+            
+           
+        }
+//        .task {
+//            do {
+//                try await workspace.fetch()
+//            } catch {
+//                print("error")
+//            }
+//        }
         
 //        NavigationView {
 //
@@ -56,8 +91,8 @@ struct ReservationsView: View {
     }
 }
 
-struct ReservationsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ReservationsView()
-    }
-}
+//struct ReservationsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ReservationsView()
+//    }
+//}
