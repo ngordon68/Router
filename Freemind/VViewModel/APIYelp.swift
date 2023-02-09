@@ -44,7 +44,7 @@ class TestApi: ObservableObject {
     
     // let baseurl = "https://api.yelp.com/v3/businesses/search?location=detroit&sort_by=best_match&limit=20"
        
-    //    let baseurl = "https://api.yelp.com/v3/businesses/search?location=detroit&term=food&sort_by=best_match&limit=20"
+       // let baseurl = "https://api.yelp.com/v3/businesses/search?location=Detroit&term=free%20public%20work%20space%20and%20coffee%20shops&sort_by=best_match&limit=40"
         
         let baseurl = "https://api.yelp.com/v3/businesses/search?location=detroit&term=farmer%27s%20market&categories=work%20table&sort_by=best_match&limit=25"
 
