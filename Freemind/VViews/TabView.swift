@@ -16,7 +16,7 @@ struct MainView: View {
     var body: some View {
         
             TabView {
-                ContentView(workSpace: workSpace, workSpaceFavorite: workSpaceFavorite)
+                ContentView(workSpace: workSpace, workSpaceFavorite: workSpaceFavorite, vm: vm)
                     .tabItem {
                         Label("Received", systemImage: "list.bullet.below.rectangle")
                     }
@@ -25,7 +25,7 @@ struct MainView: View {
                     .tabItem {
                         Label("Real Time \n Feed", systemImage: "calendar")
                     }
-                FavoritesView(workSpaceFavorite: workSpaceFavorite, workSpace: workSpace)
+                FavoritesView(workSpaceFavorite: workSpaceFavorite, workSpace: workSpace, vm: vm)
                     .tabItem {
                         Label("Favorites", systemImage: "heart.fill")
                     }

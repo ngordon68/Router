@@ -16,7 +16,15 @@ struct ReservationsView: View {
     @ObservedObject var vm: TestApi
     
     
-    
+//    AsyncImage(url: URL(string: imageURL)) { image in
+//        image
+//            .resizable()
+//            .scaledToFill()
+//    } placeholder: {
+//        Color.purple.opacity(0.1)
+//    }
+//    .frame(width: 300, height: 500)
+//    .cornerRadius(20)
 
    
 
@@ -27,19 +35,33 @@ struct ReservationsView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(vm.testworkspaces) { workSpace in
-                        HStack {
+                        VStack {
                             Text(workSpace.name ?? "nothing")
-                            Text("\(workSpace.reviewCount!)")
-                            // Text(workSace.location!.address1 ?? "NOTHING!" )
-                            AsyncImage(url: URL(string: workSpace.imageURL!))
-                                .frame(width:50, height:50)
+                        
+//
+//                            AsyncImage(
+//                                url: URL(string: workSpace.imageURL ?? "nil"), scale: 3.0)
+//
+//
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(maxWidth: 100, maxHeight: 100)
+                            
+                            AsyncImage(url: URL(string: workSpace.imageURL ?? "nil")) { test in
+                                test.image?
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(maxWidth: 100, maxHeight: 100)
+                                    .cornerRadius(10)
+                                
+                            }
                                 
                             
                         }
                         
                         
                     }
-                }.onAppear(perform: vm.getPosts)
+                }
+                //.onAppear(perform: vm.getPosts)
             }
             
            
@@ -91,8 +113,8 @@ struct ReservationsView: View {
     }
 }
 
-//struct ReservationsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ReservationsView()
-//    }
-//}
+struct ReservationsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ReservationsView(vm: TestApi())
+    }
+}
