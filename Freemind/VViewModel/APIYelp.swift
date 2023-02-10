@@ -44,9 +44,11 @@ class TestApi: ObservableObject {
     
     // let baseurl = "https://api.yelp.com/v3/businesses/search?location=detroit&sort_by=best_match&limit=20"
        
-       // let baseurl = "https://api.yelp.com/v3/businesses/search?location=Detroit&term=free%20public%20work%20space%20and%20coffee%20shops&sort_by=best_match&limit=40"
+       //let baseurl = "https://api.yelp.com/v3/businesses/search?location=Detroit&term=good%20for%20working&sort_by=best_match&limit=30"
         
-        let baseurl = "https://api.yelp.com/v3/businesses/search?location=detroit&term=farmer%27s%20market&categories=work%20table&sort_by=best_match&limit=25"
+       // let baseurl = "https://api.yelp.com/v3/businesses/search?location=detroit&term=farmer%27s%20market&categories=work%20table&sort_by=best_match&limit=25"
+        
+      let baseurl =  "https://api.yelp.com/v3/businesses/search?location=Detroit&term=Free%20wifi&sort_by=best_match&limit=20"
 
         let url = URL(string: baseurl )!
         var request = URLRequest(url: url)
@@ -97,15 +99,6 @@ class TestApi: ObservableObject {
     }
     
     
-//    func search() {
-//        let live = YelpApiService.live
-//        
-//        live.search("food", "Detroit")
-//            .assign(to: &$testworkspaces)
-//        
-//        print(testworkspaces.count)
-//        
-//    }
 }
 
 
