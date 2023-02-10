@@ -29,36 +29,41 @@ struct FavoritesView: View {
                         
                         ForEach(vm.testworkspaces) { test in
                             Rectangle()
-                                .frame(width:350, height:350)
-                                .cornerRadius(70)
                                 .foregroundColor(appColors.primaryColorOne)
+                                .frame( height:220)
+                                .cornerRadius(20)
+                                .shadow(radius: 10)
+                                .padding()
+                               
                                 .overlay(
-                                    VStack {
+                                    VStack(alignment: .center) {
                                         
                                         AsyncImage(url: URL(string: test.imageURL ?? "nil")) { test in
                                             test.image?
                                                 .resizable()
-                                                .aspectRatio(contentMode: .fill)
-                                                .frame(maxWidth: 300, maxHeight: 250)
-                                                .cornerRadius(30)
+                                                .frame(maxWidth: 310, maxHeight: 150)
+                                                .cornerRadius(10)
                                                 .overlay (
                                                     Button {
                                                         workSpaceFavorite.appendToFavorites(workspace: workSpace)
                                                     } label: {
                                                         Image(systemName: "heart.fill")
-                                                            .font(.system(size:30))
+                                                            .font(.system(size:24))
                                                             .foregroundColor(workSpace.isFavorite ? .pink: .white)
+                                                            .shadow(radius: 10)
                                                     }
                                                     
-                                                        .offset(x:120,y:-70)
+                                                        .offset(x:130,y:-50)
                                                 )
                                             
                                         }
                                         HStack {
                                             Text(test.name ?? "nil")
                                                 .font(.title)
+                                                .bold()
+                                                .padding(.leading)
                                                 .foregroundColor(appColors.primaryColorTwo)
-                                                .padding()
+                                               
                                             
                                             Spacer()
                                             
@@ -73,16 +78,11 @@ struct FavoritesView: View {
                                                     
                                                     
                                                 )
-                                                .padding()
+                                                Spacer()
                                         }
                                     }.padding()
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                )
+                                ).padding(.top, 4)
                             
                             
                             
