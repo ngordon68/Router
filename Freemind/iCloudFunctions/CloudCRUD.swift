@@ -45,6 +45,14 @@ struct FruitModel: Hashable, CloudKitableProtocol {
         }
         
         self.init(record: record)
+        
+        /// this initializer is called when you decode data from JSON (from disk or cloud)
+//        init() {
+//            // look up init from decoder, Codable protocol
+//        }
+        
+        
+        
     }
     func update(newName: String) -> FruitModel? {
         let record = record

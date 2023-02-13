@@ -9,14 +9,38 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @StateObject var test = User()
-    @StateObject var searched = Search()
-    @ObservedObject var workSpace: WorkSpace
+   // @StateObject var test = User()
+    //  @StateObject var searched = Search()
     @ObservedObject var workSpaceFavorite:WorkSpaceFavorites
     @ObservedObject var vm: TestApi
+   
+    @State private var selectedSpace: TestWorkSpace?
+    
+    var space: TestWorkSpace
+    
+    //var workSpace:TestWorkSpace
+ 
     
     @State private var searchText = ""
-
+    @State var workSpace:TestWorkSpace
+    
+    
+    
+    func openMaps() {
+        
+        
+        let latitude = 7.065306
+        let longitude = 125.607833
+        
+        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
+        
+        if UIApplication.shared.canOpenURL(url!) {
+              UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        }
+        
+    }
+ 
+    
     
     var body: some View {
         NavigationStack {
@@ -27,98 +51,123 @@ struct ContentView: View {
                 
                 
                 VStack {
+                 
+                    Button {
+                        openMaps()
+                    } label: {
+                        Text("test")
+                    }
+                    
+                
                     
                     ScrollView {
                         
-                   
-                        ForEach(vm.testworkspaces) { test in
-                            Rectangle()
-                                .foregroundColor(appColors.primaryColorOne)
-                                .frame( height:220)
-                                .cornerRadius(20)
-                                .shadow(radius: 10)
-                                .padding()
-                               
-                                .overlay(
-                                    VStack(alignment: .center) {
+                        ForEach(vm.searchResults) { test in
+                            
+                            
+                            
+                            
+                            Button { selectedSpace = test }
+//                            NavigationLink(destination: WorkSpaceExpandedView(yelp: TestApi(), workSpaceFavorite: WorkSpaceFavorites(), slider: SliderModelView(), workSpace: .example))
+                        label: {
+                          
+                                Rectangle()
+                                    .foregroundColor(appColors.primaryColorOne)
+                                    .frame( height:220)
+                                    .cornerRadius(20)
+                                    .shadow(radius: 10)
+                                    .padding()
+                                
+                                    .overlay(
+                                        VStack(alignment: .center) {
+                                            
+                                            // Text(test.isFavorite.description)
+                                            
+                                            AsyncImage(url: URL(string: test.imageURL ?? "nil")) { photo in
+                                                photo.image?
+                                                    .resizable()
+                                                    .frame(maxWidth: 330, maxHeight: 150)
+                                                    .cornerRadius(10)
+                                                    .overlay (
+                                                        Button {
+                                                            
+                                                            
+                                                        } label: {
+                                                            Image(systemName: "heart.fill")
+                                                            
+                                                                .font(.system(size:30))
+                                                            //                                                            .foregroundColor(test.isFavorite ? .pink: .white)
+                                                                .shadow(color: appColors.secondaryColorOne, radius: 5, x: 0, y: 0)
+                                                        }
+                                                        
+                                                            .offset(x:145,y:-55)
+                                                    )
+                                                
+                                            }
+                                            HStack {
+                                                Text(test.name)
+                                                    .font(.headline)
+                                                    .bold()
+                                                
+                                                    .padding(.leading)
+                                                    .foregroundColor(appColors.primaryColorTwo)
+                                                
+                                                
+                                                Spacer()
+                                                
+                                                Rectangle()
+                                                    .foregroundColor(appColors.secondaryColorTwo)
+                                                    .frame(width:40, height: 40)
+                                                    .cornerRadius(10)
+                                                    .overlay (
+                                                        
+                                                        Button {
+                                                            openMaps()
+                                                        } label: {
+                                                            Image(systemName: "info.circle")
+                                                        }
+                                                        .buttonStyle(.borderless)
+                                                        
+                                                        
+                                                    )
+                                                    .padding(.trailing, 15)
+                                                
+                                            }
+                                        }.padding()
                                         
-                                        AsyncImage(url: URL(string: test.imageURL ?? "nil")) { test in
-                                            test.image?
-                                                .resizable()
-                                                .frame(maxWidth: 330, maxHeight: 150)
-                                                .cornerRadius(10)
-                                                .overlay (
-                                                    Button {
-                                                        self.workSpaceFavorite.appendToFavoritesForYelp(workSpace: workSpaceFavorite)
-                                                    } label: {
-                                                        Image(systemName: "heart.fill")
-//                                                            .font(.system(size:24))
-//                                                            .foregroundColor(workSpace.isFavorite ? .pink: .white)
-//                                                            .shadow(radius: 10)
-                                                            .font(.system(size:30))
-                                                            .foregroundColor(workSpaceFavorite.isFavorite ? .pink: .white)
-                                                            .shadow(color: appColors.secondaryColorOne, radius: 5, x: 0, y: 0)
-                                                    }
-                                                    
-                                                        .offset(x:145,y:-55)
-                                                )
-                                            
-                                        }
-                                        HStack {
-                                            Text(test.name ?? "nil")
-                                                .font(.headline)
-                                                .bold()
+                                    ).padding(.top, 4)
                                 
-                                                .padding(.leading)
-                                                .foregroundColor(appColors.primaryColorTwo)
-                                               
-                                            
-                                            Spacer()
-                                            
-                                            Rectangle()
-                                                .foregroundColor(appColors.secondaryColorTwo)
-                                                .frame(width:40, height: 40)
-                                                .cornerRadius(10)
                                 
-                                                .overlay (
-                                                    
-                                                    Image(systemName: "car.circle")
-                                                        .foregroundColor(.white)
-                                                    
-                                                    
-                                                )
-                                                .padding(.trailing, 15)
-                                    
-                                        }
-                                    }.padding()
-                                    
-                                ).padding(.top, 4)
-                            
-                            
-                            
+                                
+                            }
                         }
-                        
-                        
-                        
                     }
                     
-                }
+                }.onAppear(perform: vm.getPosts)
+                .sheet(item: $selectedSpace, content: WorkSpaceExpandedView.init)
             }
             .navigationTitle("Catalog")
-          
-         
             
             
-        }  .searchable(text: $searchText)
+            
+            
+        }  .searchable(text: $vm.searchText)
     }
 }
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(workSpace: WorkSpace.example, workSpaceFavorite: WorkSpaceFavorites(), vm: TestApi())
+        ContentView(workSpaceFavorite: WorkSpaceFavorites(), vm: TestApi(),space: .example, workSpace: .example)
     }
 }
+
+
+let baseurl =  "https://api.yelp.com/v3/businesses/search?location=Detroit&term=Free%20wifi&sort_by=best_match&limit=20"
+
+
+//let baseurl = "https://api.yelp.com/v3/businesses/search?location=detroit&term=farmer%20market&sort_by=best_match&limit=20"
+
 
 
 

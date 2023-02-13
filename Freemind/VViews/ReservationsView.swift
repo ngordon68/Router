@@ -32,37 +32,37 @@ struct ReservationsView: View {
     var body: some View {
         VStack {
             Text("test \(vm.testworkspaces.count)")
-            ScrollView {
-                LazyVStack {
-                    ForEach(vm.testworkspaces) { workSpace in
-                        VStack {
-                            Text(workSpace.name ?? "nothing")
-                        
+//            ScrollView {
+//                LazyVStack {
+//                    ForEach(vm.testworkspaces) { workSpace in
+//                        VStack {
+//                            Text(workSpace.name ?? "nothing")
 //
-//                            AsyncImage(
-//                                url: URL(string: workSpace.imageURL ?? "nil"), scale: 3.0)
+////
+////                            AsyncImage(
+////                                url: URL(string: workSpace.imageURL ?? "nil"), scale: 3.0)
+////
+////
+////                                .aspectRatio(contentMode: .fit)
+////                                .frame(maxWidth: 100, maxHeight: 100)
+//
+//                            AsyncImage(url: URL(string: workSpace.imageURL ?? "nil")) { test in
+//                                test.image?
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fill)
+//                                    .frame(maxWidth: 100, maxHeight: 100)
+//                                    .cornerRadius(10)
+//
+//                            }
 //
 //
-//                                .aspectRatio(contentMode: .fit)
-//                                .frame(maxWidth: 100, maxHeight: 100)
-                            
-                            AsyncImage(url: URL(string: workSpace.imageURL ?? "nil")) { test in
-                                test.image?
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(maxWidth: 100, maxHeight: 100)
-                                    .cornerRadius(10)
-                                
-                            }
-                                
-                            
-                        }
-                        
-                        
-                    }
-                }
-                //.onAppear(perform: vm.getPosts)
-            }
+//                        }
+//
+//
+//                    }
+//                }
+//                //.onAppear(perform: vm.getPosts)
+//            }
             
            
         }

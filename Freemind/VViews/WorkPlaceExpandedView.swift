@@ -1,95 +1,41 @@
-//
-//  WorkPlaceExpandedView.swift
-//  Freemind
-//
-//  Created by Nick Gordon on 2/9/23.
-//
 
 import SwiftUI
+import Charts
 
-struct WorkSpaceExpandedView: View {
-    
-    @ObservedObject var workSpace:WorkSpace
-    @ObservedObject var workSpaceFavorite: WorkSpaceFavorites
-    
-    var body: some View {
-        
 
-        
-        ZStack {
-            appColors.primaryColorTwo
-                .ignoresSafeArea()
-
-            
-            VStack {
-                RoundedRectangle(cornerRadius: 20)
-                    .padding(.all)
-                    .foregroundColor(appColors.primaryColorOne)
-                    .overlay(
-                        VStack {
-                            Image(workSpace.roomPicture)
-                                .resizable()
-                                .frame(width:300, height:300)
-                                .cornerRadius(20)
-                                .overlay (
-                                    Button {
-                                        workSpaceFavorite.appendToFavorites(workspace: workSpace)
-                                    } label: {
-                                        Image(systemName: "heart.fill")
-                                            .font(.system(size:30))
-                                            .foregroundColor(workSpace.isFavorite ? .pink: .white)
-                                            .shadow(color: appColors.secondaryColorOne, radius: 5, x: 0, y: 0)
-                                        
-                                    }
-                                  
-                                    .offset(x:110,y:-110)
-        
-                                )
-                            Text(workSpace.roomName)
-                                .font(.headline)
-                                .padding(.leading)
-                                .foregroundColor(appColors.primaryColorTwo)
-                            Text(workSpace.roomDescription)
-                                .padding(.leading)
-                                .foregroundColor(appColors.primaryColorTwo)
-                            Grid {
-                                GridRow {
-                                    Text("Wi-Fi")
-                                    Image(systemName: "wifi")
-                                }
-                                GridRow {
-                                    Text("Accessiblity")
-                                    Image(systemName: "figure.roll")
-                                    
-                                }
-                            }
-                           
-                        }
-                    )
-                
-                Button {
-                } label: {
-                    Text("Share")
-                        .padding()
-                        .buttonStyle(.borderedProminent)
-                        .background(appColors.primaryColorOne)
-                        .foregroundColor(appColors.primaryColorTwo)
-                        .cornerRadius(8)
-                        .controlSize(.large)
-                }
-                                        
-            
-            }
-            
-            
-        }
-        
-    }
+struct SliderChart: Identifiable {
+    var id = UUID().uuidString
+    var type: String
+    var count: Double
 }
-
-struct WorkSpaceExpandedView_Previews: PreviewProvider {
-    static var previews: some View {
-        WorkSpaceExpandedView(workSpace: WorkSpace.example, workSpaceFavorite: WorkSpaceFavorites())
+ struct DataView: View {
+    // let ambience = ["crowd":0, "cleanliness":3, "noise":1, "temperature":2]
+     @ObservedObject var slider:SliderModelView
+     
+     var data: [SliderChart] = [
+        .init(type: "test" , count: 2),
+        .init(type: "d", count: 3)
         
-    }
-}
+     ]
+     
+     
+     var body: some View {
+         Chart(data) { data in
+             BarMark(
+                x: .value("person", data.type),
+                y: .value("cups bought", data.count)
+             )
+         }.frame(width: 350, height: 300)
+             .chartYAxisLabel("Quality",alignment:.center)
+             .chartYAxis {
+                 AxisMarks(position: .leading)
+             }
+             .chartYScale(domain: 0...3)
+     }
+ }
+
+ struct Contentiew: PreviewProvider {
+     static var previews: some View {
+        DataView(slider: SliderModelView())
+     }
+ }

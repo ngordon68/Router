@@ -8,24 +8,23 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject var test:User = User()
-    @StateObject var workSpace = WorkSpace(roomName: "Coffe Bean", roomDescription: "Place to study", roomPicture: "Coffee")
+    @StateObject var test:User = User() //cloud
     @StateObject var workSpaceFavorite = WorkSpaceFavorites()
     @StateObject var vm: TestApi = TestApi()
  
     var body: some View {
         
             TabView {
-                ContentView(workSpace: workSpace, workSpaceFavorite: workSpaceFavorite, vm: vm)
+                ContentView( workSpaceFavorite: workSpaceFavorite, vm: vm, space: .example,workSpace: .example )
                     .tabItem {
                         Label("Received", systemImage: "list.bullet.below.rectangle")
                     }
-                ReservationsView(vm: .init())
-
-                    .tabItem {
-                        Label("Real Time \n Feed", systemImage: "calendar")
-                    }
-                FavoritesView(workSpaceFavorite: workSpaceFavorite, workSpace: workSpace, vm: vm)
+//                WorkSpaceExpandedView(yelp: TestApi(), workSpaceFavorite: WorkSpaceFavorites())
+//
+//                    .tabItem {
+//                        Label("Real Time \n Feed", systemImage: "calendar")
+//                    }
+                FavoritesView(workSpaceFavorite: workSpaceFavorite, vm: vm)
                     .tabItem {
                         Label("Favorites", systemImage: "heart.fill")
                     }
@@ -35,7 +34,6 @@ struct MainView: View {
 
 
 struct TabView_Previews: PreviewProvider {
-    @EnvironmentObject var workSpace: WorkSpace
    
     static var previews: some View {
         MainView()

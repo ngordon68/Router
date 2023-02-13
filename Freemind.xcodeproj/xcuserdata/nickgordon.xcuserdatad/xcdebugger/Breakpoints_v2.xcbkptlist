@@ -3,4 +3,54 @@
    uuid = "1A469481-739D-461B-823D-9D7313A0F5F4"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECEF5C38-4864-4E75-BFB5-4D1B40D7A541"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Freemind/VViewModel/YelpWorkSpaceModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "TestWorkSpace"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "ECEF5C38-4864-4E75-BFB5-4D1B40D7A541 - 8909de9311ccb9ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Freemind.TestWorkSpace.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;Freemind.TestWorkSpace.CodingKeys&gt;"
+                  moduleName = "Freemind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nickgordon/Desktop/Freemind/Freemind/VViewModel/YelpWorkSpaceModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "ECEF5C38-4864-4E75-BFB5-4D1B40D7A541 - 138ecd39f9dbae3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Freemind.TestWorkSpace.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "Freemind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nickgordon/Desktop/Freemind/Freemind/VViewModel/YelpWorkSpaceModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

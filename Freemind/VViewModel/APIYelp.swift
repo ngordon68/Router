@@ -13,6 +13,7 @@ import Combine
 
 
 
+
 //Bearer
 //find a way to protect this key
 let apiKey = "iTvzHsH40PlOzpMVv5IRKhWLaAyVYvZ3BAIxg8sR9GbgkpqvCUNEgbxouW6irhZlkTHAzRJOw1W1zMBNPEgAdE3z3dLrAzWyo-3U8sdJYF1oLg-7BMvXgTSEZCHhY3Yx"
@@ -34,21 +35,13 @@ class TestApi: ObservableObject {
     
     init() {
     //vm.search()
-     getPosts()
+    // getPosts()
     }
     
  
     func getPosts() {
-        
-     //   var search: (String, String) -> AnyPublisher<[TestWorkSpace], Never>
-    
-    // let baseurl = "https://api.yelp.com/v3/businesses/search?location=detroit&sort_by=best_match&limit=20"
-       
-       //let baseurl = "https://api.yelp.com/v3/businesses/search?location=Detroit&term=good%20for%20working&sort_by=best_match&limit=30"
-        
-       // let baseurl = "https://api.yelp.com/v3/businesses/search?location=detroit&term=farmer%27s%20market&categories=work%20table&sort_by=best_match&limit=25"
-        
-      let baseurl =  "https://api.yelp.com/v3/businesses/search?location=Detroit&term=Free%20wifi&sort_by=best_match&limit=20"
+                
+//      let baseurl =  "https://api.yelp.com/v3/businesses/search?location=Detroit&term=Free%20wifi&sort_by=best_match&limit=20"
 
         let url = URL(string: baseurl )!
         var request = URLRequest(url: url)
@@ -99,6 +92,22 @@ class TestApi: ObservableObject {
     }
     
     
+    
+    
+    
+    @Published var searched = [TestWorkSpace]()
+    @Published private (set) var selected = [TestWorkSpace]()
+    @Published var searchText = ""
+ 
+    
+    var searchResults: [TestWorkSpace] {
+        if searchText.isEmpty {
+            return testworkspaces
+        } else {
+            return testworkspaces.filter { $0.name.localizedCaseInsensitiveContains(searchText)  }
+            }
+        }
+
 }
 
 

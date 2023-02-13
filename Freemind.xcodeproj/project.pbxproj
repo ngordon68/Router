@@ -17,9 +17,9 @@
 		8E7CA4CA297EEC6D00A72FA4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4C9297EEC6D00A72FA4 /* MapView.swift */; };
 		8E7CA4CC297EED5400A72FA4 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */; };
 		8E7CA4CE297EF05400A72FA4 /* ICloudUtilityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4CD297EF05400A72FA4 /* ICloudUtilityClass.swift */; };
-		8E7CA4D0297EF06B00A72FA4 /* WorkSpaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */; };
 		8EB116232982D00F00212335 /* CloudCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB116222982D00F00212335 /* CloudCRUD.swift */; };
 		8EB116252982EE7A00212335 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB116242982EE7A00212335 /* AppColors.swift */; };
+		8EB2F44829957BFC0008E0FB /* WorkPlaceExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2F44729957BFC0008E0FB /* WorkPlaceExpandedView.swift */; };
 		8EBD75F52981F5F300FB4028 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD75F42981F5F200FB4028 /* TabView.swift */; };
 		8ECE43BE2980363500601485 /* ButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE43BD2980363500601485 /* ButtonStyleView.swift */; };
 		8ECE43C0298037B100601485 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE43BF298037B100601485 /* HeaderView.swift */; };
@@ -28,6 +28,8 @@
 		8ED038E1298EDB53008AFB74 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */; };
 		8ED038E329916B4A008AFB74 /* APIYelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038E229916B4A008AFB74 /* APIYelp.swift */; };
 		8ED038E529932F65008AFB74 /* YelpWorkSpaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED038E429932F65008AFB74 /* YelpWorkSpaceModel.swift */; };
+		8EDFC18929968C7000050669 /* ReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFC18829968C7000050669 /* ReadWrite.swift */; };
+		8EDFC18D2996951300050669 /* UserSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFC18C2996951300050669 /* UserSurveyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +44,9 @@
 		8E7CA4C9297EEC6D00A72FA4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		8E7CA4CD297EF05400A72FA4 /* ICloudUtilityClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudUtilityClass.swift; sourceTree = "<group>"; };
-		8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceViewModel.swift; sourceTree = "<group>"; };
 		8EB116222982D00F00212335 /* CloudCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCRUD.swift; sourceTree = "<group>"; };
 		8EB116242982EE7A00212335 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		8EB2F44729957BFC0008E0FB /* WorkPlaceExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkPlaceExpandedView.swift; sourceTree = "<group>"; };
 		8EBD75ED2981ACF400FB4028 /* Freemind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Freemind.entitlements; sourceTree = "<group>"; };
 		8EBD75EF2981E33300FB4028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8EBD75F42981F5F200FB4028 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 		8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		8ED038E229916B4A008AFB74 /* APIYelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIYelp.swift; sourceTree = "<group>"; };
 		8ED038E429932F65008AFB74 /* YelpWorkSpaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpWorkSpaceModel.swift; sourceTree = "<group>"; };
+		8EDFC18829968C7000050669 /* ReadWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWrite.swift; sourceTree = "<group>"; };
+		8EDFC18C2996951300050669 /* UserSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSurveyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				8E7CA4CD297EF05400A72FA4 /* ICloudUtilityClass.swift */,
 				8E1CB54229802526004F5425 /* CloudKitViewModel.swift */,
 				8EB116222982D00F00212335 /* CloudCRUD.swift */,
+				8EDFC18829968C7000050669 /* ReadWrite.swift */,
 			);
 			path = iCloudFunctions;
 			sourceTree = "<group>";
@@ -121,15 +126,17 @@
 			isa = PBXGroup;
 			children = (
 				8EBD75F42981F5F200FB4028 /* TabView.swift */,
+				8EB2F44729957BFC0008E0FB /* WorkPlaceExpandedView.swift */,
+				8EDFC18C2996951300050669 /* UserSurveyView.swift */,
+				8E77E41C2989631B00A38459 /* WorkSpaceExpandedView.swift */,
 				8E7CA4BB297EEC2700A72FA4 /* Catalogue.swift */,
 				8ED038E0298EDB53008AFB74 /* SplashScreenView.swift */,
-				8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */,
 				8E7CA4C9297EEC6D00A72FA4 /* MapView.swift */,
+				8E7CA4CB297EED5400A72FA4 /* FavoritesView.swift */,
 				8E7CA4C7297EEC6000A72FA4 /* ReservationsView.swift */,
 				8ECE43BF298037B100601485 /* HeaderView.swift */,
 				8ECE43BD2980363500601485 /* ButtonStyleView.swift */,
 				8EB116242982EE7A00212335 /* AppColors.swift */,
-				8E77E41C2989631B00A38459 /* WorkSpaceExpandedView.swift */,
 			);
 			path = VViews;
 			sourceTree = "<group>";
@@ -138,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				8ED038DE298DA845008AFB74 /* SearchViewModel.swift */,
-				8E7CA4CF297EF06B00A72FA4 /* WorkSpaceViewModel.swift */,
 				8ED038E229916B4A008AFB74 /* APIYelp.swift */,
 				8ED038E429932F65008AFB74 /* YelpWorkSpaceModel.swift */,
 				8ED038DC298DA7FD008AFB74 /* WorkSpaceFavoritesViewModel.swift */,
@@ -219,6 +225,7 @@
 				8ED038E329916B4A008AFB74 /* APIYelp.swift in Sources */,
 				8ED038E1298EDB53008AFB74 /* SplashScreenView.swift in Sources */,
 				8EBD75F52981F5F300FB4028 /* TabView.swift in Sources */,
+				8EDFC18D2996951300050669 /* UserSurveyView.swift in Sources */,
 				8ED038E529932F65008AFB74 /* YelpWorkSpaceModel.swift in Sources */,
 				8ECE43BE2980363500601485 /* ButtonStyleView.swift in Sources */,
 				8ED038DF298DA845008AFB74 /* SearchViewModel.swift in Sources */,
@@ -226,9 +233,10 @@
 				8EB116252982EE7A00212335 /* AppColors.swift in Sources */,
 				8EB116232982D00F00212335 /* CloudCRUD.swift in Sources */,
 				8E77E41D2989631B00A38459 /* WorkSpaceExpandedView.swift in Sources */,
-				8E7CA4D0297EF06B00A72FA4 /* WorkSpaceViewModel.swift in Sources */,
+				8EB2F44829957BFC0008E0FB /* WorkPlaceExpandedView.swift in Sources */,
 				8E7CA4C8297EEC6000A72FA4 /* ReservationsView.swift in Sources */,
 				8E7CA4CA297EEC6D00A72FA4 /* MapView.swift in Sources */,
+				8EDFC18929968C7000050669 /* ReadWrite.swift in Sources */,
 				8ECE43C0298037B100601485 /* HeaderView.swift in Sources */,
 				8E7CA4CE297EF05400A72FA4 /* ICloudUtilityClass.swift in Sources */,
 				8E1CB54329802526004F5425 /* CloudKitViewModel.swift in Sources */,
