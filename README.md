@@ -47,7 +47,7 @@ Takes two numbers and returns the sum.
 Swift, Swift UI, XCode, Figma, Sketch
 
 <img width="122" alt="Screen Shot 2023-02-15 at 10 26 29 AM" src="https://user-images.githubusercontent.com/124601363/219092275-3a9fe017-20ae-4188-bf79-efc6193a3c1e.png">
-##02 Coding Topics
+## 02 Coding Topics
 Classes
 State Objects/Observable Object
 Foreach
