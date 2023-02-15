@@ -47,5 +47,5 @@ Takes two numbers and returns the sum.
 Javascript, HTML, CSS...
 
 
-![Logo](<a href="https://imgbb.com/"><img src="https://i.ibb.co/RYBmNzf/Screen-Shot-2023-02-15-at-8-12-53-AM.png" alt="Screen-Shot-2023-02-15-at-8-12-53-AM" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload an image to the web</a><br />)
+(<a href="https://imgbb.com/"><img src="https://i.ibb.co/RYBmNzf/Screen-Shot-2023-02-15-at-8-12-53-AM.png" alt="Screen-Shot-2023-02-15-at-8-12-53-AM" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload an image to the web</a><br />)
 
