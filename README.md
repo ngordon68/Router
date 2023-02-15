@@ -46,6 +46,5 @@ Takes two numbers and returns the sum.
 ## 🛠 Skills
 Javascript, HTML, CSS...
 
-
-(<a href="https://imgbb.com/"><img src="https://i.ibb.co/RYBmNzf/Screen-Shot-2023-02-15-at-8-12-53-AM.png" alt="Screen-Shot-2023-02-15-at-8-12-53-AM" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload an image to the web</a><br />)
+<img width="122" alt="Screen Shot 2023-02-15 at 10 26 29 AM" src="https://user-images.githubusercontent.com/124601363/219092275-3a9fe017-20ae-4188-bf79-efc6193a3c1e.png">
 
