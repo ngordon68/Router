@@ -13,19 +13,20 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 
 <table>
  <tr>
-  <td><img src="https://user-images.githubusercontent.com/124601363/219433483-feb5dcda-c849-485d-a7e2-f969f3fe769b.png"></td>
+  <td>
+   <img src="https://user-images.githubusercontent.com/124601363/219433483-feb5dcda-c849-485d-a7e2-f969f3fe769b.png" style= "width:300px; height: 500px;">
+   
+  </td>
   
-  <td><img src="https://user-images.githubusercontent.com/124601363/219434059-8bc9347a-bfcb-46e9-ac72-815adf04c6fe.png"><td>
-  <tr>
+  <td>
+   <img src="https://user-images.githubusercontent.com/124601363/219434059-8bc9347a-bfcb-46e9-ac72-815adf04c6fe.png" style= "width:300px; height: 500px;">
+ 
+  <td>
+  <tr><img width="232" alt="image" src="https://user-images.githubusercontent.com/124601363/219716825-689f5539-75d2-40e9-b536-49511c8a587b.png">
+
    <table>
   
 
-
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
-<img width="224" alt="Screen Shot 2023-02-16 at 11 51 24 AM" src="https://user-images.githubusercontent.com/124601363/219433483-feb5dcda-c849-485d-a7e2-f969f3fe769b.png">
-
-
-<img width="224" alt="Screen Shot 2023-02-16 at 11 53 54 AM" src="https://user-images.githubusercontent.com/124601363/219434059-8bc9347a-bfcb-46e9-ac72-815adf04c6fe.png">
 
 
 ## Objectives 
@@ -90,8 +91,24 @@ Swift, Swift UI, XCode, Figma, Sketch.
 
 # 03 Project Timeline
 
-<img width="224" alt="Screen Shot 2023-02-16 at 10 02 34 AM" src="https://user-images.githubusercontent.com/124601363/219404052-cad49495-6ffd-47b8-9124-e68773d95abe.png">
-<img width="224" alt="Screen Shot 2023-02-16 at 10 02 43 AM" src="https://user-images.githubusercontent.com/124601363/219404162-964be226-e08d-4a38-9ca8-2a1c07579650.png">
 
-<img width="224" alt="Screen Shot 2023-02-16 at 10 02 59 AM" src="https://user-images.githubusercontent.com/124601363/219404188-d9556e7e-e694-404c-9d06-9f366e880e63.png">
-
+ <table>
+ <tr>
+  <td>
+   <img src="https://user-images.githubusercontent.com/124601363/219716631-f571b5e7-2ac7-4022-a5ab-21e9ff8a47eb.png" style= "width:200px; height: 300px;">
+   
+  </td>
+   <td>
+   <img src="(https://user-images.githubusercontent.com/124601363/219716631-f571b5e7-2ac7-4022-a5ab-21e9ff8a47eb.png)" style= "width:200px; height: 300px;">
+   
+  </td>
+  
+  <td>
+   <img src="(https://user-images.githubusercontent.com/124601363/219404188-d9556e7e-e694-404c-9d06-9f366e880e63.png)" style= "width:200px; height: 300px;">
+ 
+  <td>
+  <tr>
+   <table>   
+    
+    
+    
