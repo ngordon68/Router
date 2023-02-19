@@ -20,7 +20,7 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
   
   <td>
    
- <img width="320" alt="Screen Shot 2023-02-19 at 3 05 29 PM" src="https://user-images.githubusercontent.com/124601363/219972432-64f96fa6-20db-4d17-a647-aaf36d5af3e4.png">
+ <img width="290" alt="Screen Shot 2023-02-19 at 3 08 17 PM" src="https://user-images.githubusercontent.com/124601363/219972589-c770946f-b243-4135-81a8-61e6af5f70c8.png">
 
 
  
