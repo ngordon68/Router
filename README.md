@@ -9,7 +9,7 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 
 
 ## 
-<img width="224" alt="Screen Shot 2023-02-16 at 11 50 11 AM" src="https://user-images.githubusercontent.com/124601363/219433319-6f2c39df-5b1c-45aa-a61e-9c4a8dc71baa.png">
+<img width="300px; height: 500px;" alt="Screen Shot 2023-02-16 at 11 50 11 AM" src="https://user-images.githubusercontent.com/124601363/219433319-6f2c39df-5b1c-45aa-a61e-9c4a8dc71baa.png">
 
 <table>
  <tr>
@@ -22,8 +22,8 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
    <img src="https://user-images.githubusercontent.com/124601363/219434059-8bc9347a-bfcb-46e9-ac72-815adf04c6fe.png" style= "width:300px; height: 500px;">
  
   <td>
-  <tr><img width="232" alt="image" src="https://user-images.githubusercontent.com/124601363/219716825-689f5539-75d2-40e9-b536-49511c8a587b.png">
-
+  <tr>
+  
    <table>
   
 
