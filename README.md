@@ -14,12 +14,15 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 <table>
  <tr>
   <td>
-   <img src="https://user-images.githubusercontent.com/124601363/219433483-feb5dcda-c849-485d-a7e2-f969f3fe769b.png" style= "width:300px; height: 500px;">
-   
-  </td>
+  <img width="300px; height: 500px;" alt="Screen Shot 2023-02-16 at 11 51 24 AM" src="https://user-images.githubusercontent.com/124601363/219971727-8d45fc51-7ff6-42ec-8c9a-7c7d0636b110.png">
+
+
   
   <td>
-   <img src="https://user-images.githubusercontent.com/124601363/219434059-8bc9347a-bfcb-46e9-ac72-815adf04c6fe.png" style= "width:300px; height: 500px;">
+   
+ <img width="320" alt="Screen Shot 2023-02-19 at 3 05 29 PM" src="https://user-images.githubusercontent.com/124601363/219972432-64f96fa6-20db-4d17-a647-aaf36d5af3e4.png">
+
+
  
   <td>
   <tr>
@@ -95,17 +98,22 @@ Swift, Swift UI, XCode, Figma, Sketch.
  <table>
  <tr>
   <td>
-   <img src="https://user-images.githubusercontent.com/124601363/219716631-f571b5e7-2ac7-4022-a5ab-21e9ff8a47eb.png" style= "width:200px; height: 300px;">
+ 
    
-  </td>
+
+  <td>
+ <img width="224" alt="Screen Shot 2023-02-19 at 3 02 12 PM" src="https://user-images.githubusercontent.com/124601363/219972338-2c7dc4ab-676e-48dd-9e74-47b3210e9e2a.png">
+
    <td>
-   <img src="(https://user-images.githubusercontent.com/124601363/219716631-f571b5e7-2ac7-4022-a5ab-21e9ff8a47eb.png)" style= "width:200px; height: 300px;">
    
-  </td>
+   <img width="224" alt="week2" src="https://user-images.githubusercontent.com/124601363/219970911-228e0e89-ecce-4af7-b2ec-d79adfcc28f3.png">
+
+  <td>
   
   <td>
-   <img src="(https://user-images.githubusercontent.com/124601363/219404188-d9556e7e-e694-404c-9d06-9f366e880e63.png)" style= "width:200px; height: 300px;">
- 
+  <img width="224" alt="week3" src="https://user-images.githubusercontent.com/124601363/219971006-3d179f9d-5e97-44d3-b731-2ab86a9cd50d.png">
+
+
   <td>
   <tr>
    <table>   
