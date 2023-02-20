@@ -123,6 +123,10 @@ Swift, Swift UI, XCode, Figma, Sketch.
    <table>   
     
     
-    <img width="300px; height: 500px;" alt="Screen Shot 2023-02-16 at 11 17 34 AM" src="https://user-images.githubusercontent.com/124601363/219984319-9994e376-15ba-4c24-bc5a-a56f498337fb.png">
+   
+
+# Demo
+https://user-images.githubusercontent.com/124601363/219984918-18efeae6-9c4a-4611-9641-660da41cd9a5.mov
 
 
+  
