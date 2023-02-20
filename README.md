@@ -47,10 +47,10 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#C0E2E3](https://via.placeholder.com/10/C0E2E3?text=+) #C0E2E3 |
-| Example Color | ![#074750](https://via.placeholder.com/10/074750?text=+) #074750 |
-| Example Color | ![#3EABB2](https://via.placeholder.com/10/3EABB2?text=+) #3EABB2 |
-| Example Color | ![#8FEDF7](https://via.placeholder.com/10/8FEDF7?text=+) #8FEDF7 |
+| Accent Color | ![#C0E2E3](https://via.placeholder.com/10/C0E2E3?text=+) #C0E2E3 |
+| Primary Color | ![#074750](https://via.placeholder.com/10/074750?text=+) #074750 |
+| Primary Color | ![#3EABB2](https://via.placeholder.com/10/3EABB2?text=+) #3EABB2 |
+| Secondary Color | ![#8FEDF7](https://via.placeholder.com/10/8FEDF7?text=+) #8FEDF7 |
 
 
 ## API Reference
@@ -123,4 +123,6 @@ Swift, Swift UI, XCode, Figma, Sketch.
    <table>   
     
     
-    
+    <img width="300px; height: 500px;" alt="Screen Shot 2023-02-16 at 11 17 34 AM" src="https://user-images.githubusercontent.com/124601363/219984319-9994e376-15ba-4c24-bc5a-a56f498337fb.png">
+
+
