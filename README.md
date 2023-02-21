@@ -54,7 +54,7 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 | Secondary Color | ![#8FEDF7](https://via.placeholder.com/10/8FEDF7?text=+) #8FEDF7 |
 
 
-## API Reference
+## API Reference- Yelp API Intergration
 
 #### Get all items
 
@@ -65,17 +65,6 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
 
 
 
