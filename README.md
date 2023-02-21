@@ -88,12 +88,12 @@ Swift, Swift UI, XCode, Figma, Sketch.
 
 - Classes
 - State Objects/Observable Object
-- Foreach
+- Yelp API Intergation
 - Array Appending
-- Images
 - NavigationLink
-- MapKit
-- String Interpolation 
+- Bottom Sheets
+- Maps Integration
+
 
 # 03 Project Timeline
 
