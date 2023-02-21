@@ -42,6 +42,7 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 - Collaboration with coders and designers to bring our Hi-Fi prototype to life.
 - Test UI and UX through documentation.
 - Test code to find any inconsistencies.
+- Submit Project to TestFlight for UserFeedback and make changes accordingly.
 
 ## Color Reference
 
