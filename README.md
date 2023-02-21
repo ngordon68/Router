@@ -37,9 +37,9 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 
 
 ## Objectives 
-- Code up a MVP(Mininum Viable Product) of a food store app for Eastern Market.
+- Code up a MVP(Mininum Viable Product) of a Routr App for remote workers
 - Take Hi-Fi specifications and translate to Xcode app.
-- Work with my fellow coder and designer to bring our Hi-Fi prototype to life.
+- Collaboration with coders and designers to bring our Hi-Fi prototype to life.
 - Test UI and UX through documentation.
 - Test code to find any inconsistencies.
 
@@ -75,9 +75,7 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### add(num1, num2)
 
-Takes two numbers and returns the sum.
 
 
 ## 🛠 Skills
