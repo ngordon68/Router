@@ -69,7 +69,7 @@ An app that locates free and/or inexpensive work spaces for remote workers and/o
 
 
 ## 🛠 Skills
-Swift, Swift UI, XCode, Figma, Sketch.
+Swift, Swift UI, XCode, Figma, Sketch, YELP API, SwiftCharts, Combine
 
 
 
