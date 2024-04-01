@@ -1,8 +1,4 @@
 
-![pectoralis](https://github.com/ngordon68/Router/assets/102773701/b461648b-311f-4cb7-b7a8-84c403c25498)
-
-
-
 # Router
 <img width="100" alt="Screen Shot 2023-02-15 at 8 14 27 AM" src="https://user-images.githubusercontent.com/124601363/219974329-e4a2a26d-91d9-40b1-9b3e-949065801c0f.png">
 
